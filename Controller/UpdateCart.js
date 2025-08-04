@@ -1,4 +1,4 @@
-import { Cart } from "../Schema/CartSchema";
+import { Cart } from "../Schema/CartSchema.js";
 
 export const UpdateCart = async (req, res) => {
     const { productId, quantity } = req.body;

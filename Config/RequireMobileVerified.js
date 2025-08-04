@@ -1,4 +1,4 @@
-import { User } from '../Schema/UserSchema'
+import { User } from '../Schema/UserSchema.js'
 
 export const RequireMobileVerified = async (req, res, next) => {
     const user = await User.findById(req.user.id);

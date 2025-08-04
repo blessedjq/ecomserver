@@ -1,4 +1,4 @@
-import { User } from "../Schema/UserSchema";
+import { User } from "../Schema/UserSchema.js";
 import { validationResult } from 'express-validator';
 
 function generateOTP() {

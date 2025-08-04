@@ -1,5 +1,5 @@
-import { Order } from "../Schema/OrderSchema";
-import { Product } from "../Schema/ProductSchema";
+import { Order } from "../Schema/OrderSchema.js";
+import { Product } from "../Schema/ProductSchema.js";
 
 export const CreateOrder = async (req, res) => {
     const { items, deliveryAddress } = req.body;

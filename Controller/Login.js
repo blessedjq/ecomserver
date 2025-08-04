@@ -1,4 +1,4 @@
-import { User } from "../Schema/UserSchema";
+import { User } from "../Schema/UserSchema.js";
 
 export const Login = async (req, res) => {
     const errors = validationResult(req); if (!errors.isEmpty()) return res.status(400).json({ errors: errors.array() });

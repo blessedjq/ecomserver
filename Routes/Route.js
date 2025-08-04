@@ -1,21 +1,21 @@
 import express from 'express';
 import { body } from 'express-validator';
-import { Passport } from 'passport';
+import Passport from 'passport';
 
-import { GetProducts } from '../Controller/GetProducts';
-import { PostUser } from '../Controller/PostUser';
-import { VerifyMobile } from '../Controller/VerifyMobile';
-import { Login } from '../Controller/Login';
-import { GetCart } from '../Controller/GetCart';
-import { UpdateCart } from '../Controller/UpdateCart';
-import { RemoveCartItem } from '../Controller/RemoveCartItem';
-import { CreateOrder } from '../Controller/CreateOrder';
-import { SetMobileOTP } from '../Controller/SetMobileOTP';
+import { GetProducts } from '../Controller/GetProducts.js';
+import { PostUser } from '../Controller/PostUser.js';
+import { VerifyMobile } from '../Controller/VerifyMobile.js';
+import { Login } from '../Controller/Login.js';
+import { GetCart } from '../Controller/GetCart.js';
+import { UpdateCart } from '../Controller/UpdateCart.js';
+import { RemoveCartItem } from '../Controller/RemoveCartItem.js';
+import { CreateOrder } from '../Controller/CreateOrder.js';
+import { SetMobileOTP } from '../Controller/SetMobileOTP.js';
 
-import { Auth } from '../Config/Auth';
-import { RequireMobileVerified } from '../Config/RequireMobileVerified';
-import { GoogleCallback } from '../Config/GoogleCallback';
-import { VerifyGoogle } from '../Controller/VerifyGoogle';
+import { Auth } from '../Config/Auth.js';
+import { RequireMobileVerified } from '../Config/RequireMobileVerified.js';
+import { GoogleCallback } from '../Config/GoogleCallback.js';
+import { VerifyGoogle } from '../Controller/VerifyGoogle.js';
 
 const Routes = express.Router();
 

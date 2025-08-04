@@ -1,4 +1,4 @@
-import { User } from "../Schema/UserSchema";
+import { User } from "../Schema/UserSchema.js";
 
 function generateOTP() {
     return Math.floor(100000 + Math.random() * 900000).toString();

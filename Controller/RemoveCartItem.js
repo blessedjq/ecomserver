@@ -1,4 +1,4 @@
-import { Cart } from "../Schema/CartSchema";
+import { Cart } from "../Schema/CartSchema.js";
 
 export const RemoveCartItem = async (req, res) => {
     let cart = await Cart.findOne({ user: req.user.id });

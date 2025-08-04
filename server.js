@@ -2,7 +2,8 @@ import express from 'express';
 import mongoose from 'mongoose';
 import cors from 'cors';
 import * as dotenv from 'dotenv';
-import passport from './Config/Passport';
+import passport from './Config/Passport.js';
+import routes from './Routes/Route.js';
 
 dotenv.config();
 
@@ -16,11 +17,17 @@ app.use("/api", routes);
 
 app.use(passport.initialize());
 
-mongoose.connect(process.env.MONGO_URI).then(() => console.log('MongoDB connected')).catch(e => console.error(e));
+mongoose.connect(process.env.MONGO_URI).then(() =>
+    console.log('MongoDB connected')
+).catch(e =>
+    console.error(e)
+);
 
-const PORT = process.env.PORT || 5000;
+const PORT = process.env.PORT;
 
-app.listen(PORT, () => { console.log(`Server running on port ${PORT}`); });
+app.listen(PORT, () => {
+    console.log(`Server running on port ${PORT}`);
+});
 
 /* // Twilio example: fill in your Twilio API details and uncomment.
 async function sendSMS(to, text) {

@@ -1,4 +1,4 @@
-import { User } from "../Schema/UserSchema";
+import { User } from "../Schema/UserSchema.js";
 
 // OTP verification for Google users (logged in)
 export const VerifyGoogle = async (req, res) => {

@@ -1,4 +1,4 @@
-import { User } from "../Schema/UserSchema";
+import { User } from "../Schema/UserSchema.js";
 
 export const VerifyMobile = async (req, res) => {
     const { userId, otp } = req.body;
